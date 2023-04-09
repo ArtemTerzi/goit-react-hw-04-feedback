@@ -8,7 +8,7 @@ export const App = () => {
 
   const stateShape = { good, neutral, bad };
 
-  const onLeaveFeedback = ({ target: { name, value } }) => {
+  const onLeaveFeedback = ({ target: { name } }) => {
     switch (name) {
       case 'good':
         setGoodFeedback(prev => prev + 1);
